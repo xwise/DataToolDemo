@@ -38,6 +38,11 @@ public class CacheConfiguration {
             cm.createCache(dk.siemens.enginnering.datatool.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(dk.siemens.enginnering.datatool.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(dk.siemens.enginnering.datatool.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(dk.siemens.enginnering.datatool.domain.Baseline.class.getName(), jcacheConfiguration);
+            cm.createCache(dk.siemens.enginnering.datatool.domain.Baseline.class.getName() + ".fileEntries", jcacheConfiguration);
+            cm.createCache(dk.siemens.enginnering.datatool.domain.FileEntry.class.getName(), jcacheConfiguration);
+            cm.createCache(dk.siemens.enginnering.datatool.domain.FileEntry.class.getName() + ".baselines", jcacheConfiguration);
+            cm.createCache(dk.siemens.enginnering.datatool.domain.MyFirstComponent.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
